@@ -35,3 +35,25 @@ Here are some example snippets of code to give you an idea of how the game is im
     <input type="text" id="player-name" placeholder="Your Name">
     <button onclick="startGame()">Start Game</button>
 </div>
+JavaScript Snippet (script.js)
+function generateSecretCode() {
+    let code = '';
+    for (let i = 0; i < 4; i++) {
+        code += Math.floor(Math.random() * 10).toString();
+    }
+    return code;
+}
+
+How to Play
+Open the Game: Launch the game by opening the index.html file in your web browser.
+Enter Your Name: Type your name in the provided input field and click the "Start Game" button.
+Make a Guess: Input your 4-digit guess in the designated field and click "Submit Guess."
+Analyze Feedback: Review the feedback given after each guess to help refine your next guess.
+Continue Guessing: Keep guessing until you either discover the correct sequence or exhaust your attempts.
+Game Result: The game will display a message indicating whether you won or lost, along with your name.
+Contribution
+Contributions are welcome! Feel free to fork the repository, make your changes, and submit pull requests. Any improvements or new features are highly appreciated!
+
+License
+This project is licensed under the MIT License. For more details, please refer to the LICENSE file.
+
