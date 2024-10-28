@@ -35,15 +35,16 @@ Here are some example snippets of code to give you an idea of how the game is im
     <input type="text" id="player-name" placeholder="Your Name">
     <button onclick="startGame()">Start Game</button>
 </div>
+```
 JavaScript Snippet (script.js)
-function generateSecretCode() {
+```function generateSecretCode() {
     let code = '';
     for (let i = 0; i < 4; i++) {
         code += Math.floor(Math.random() * 10).toString();
     }
     return code;
 }
-
+```
 How to Play
 Open the Game: Launch the game by opening the index.html file in your web browser.
 Enter Your Name: Type your name in the provided input field and click the "Start Game" button.
@@ -56,4 +57,8 @@ Contributions are welcome! Feel free to fork the repository, make your changes, 
 
 License
 This project is licensed under the MIT License. For more details, please refer to the LICENSE file.
+
+### Notes
+- Ensure to replace the placeholder sections, such as the `LICENSE` link, with actual links or references if you have a license file.
+- You can add any additional sections or modify existing ones to better suit your project's details or specific instructions.
 
