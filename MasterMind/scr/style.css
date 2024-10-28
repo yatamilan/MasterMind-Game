@@ -1,0 +1,119 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('background\ lp.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+/* Instruction and feedback sections */
+#instructions {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+#attempts {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* End screen message */
+#end-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    body{
+        font-family: 'Arial', sans-serif;
+        background-image: url('background\ mb.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #game-container {
+        padding: 15px;
+    }
+    
+    h1, h2 {
+        font-size: 20px;
+    }
+    
+    input[type="text"] {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 14px;
+    }
+}
+

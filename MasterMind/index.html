@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind Game</title>
+    <link rel="stylesheet" href="/scr/style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen">
+            <h1>Welcome to Mastermind!</h1>
+            <label for="player-name">Enter your name:</label>
+            <input type="text" id="player-name" placeholder="Your Name">
+            <button id="start-button">Start Game</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" style="display: none;">
+            <h2>Mastermind</h2>
+            <p id="instructions">Guess the 4-digit sequence (0-9):</p>
+            <input type="text" id="player-guess" maxlength="4">
+            <button id="submit-guess-button">Submit Guess</button>
+            <p id="feedback"></p>
+            <p id="attempts"></p>
+            <button id="hint-button">Get Hint</button> <!-- Added Get Hint Button -->
+            <p id="hint"></p> <!-- Hint will be shown here -->
+        </div>
+
+        <!-- End Screen -->
+        <div id="end-screen" style="display: none;">
+            <h1>Game Over!</h1>
+            <p id="end-message"></p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="/scr/script.js"></script>
+</body>
+
+</html>
